@@ -1,0 +1,14 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- default Handler Mapping  -->
+	
+	<!-- Controller URL  -->
+	<bean name="/reg.htm" class="com.bhavik.controller.WelcomeController" ></bean>
+	
+	<!--  View Resolver-->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
+		<property name="prefix" value="/WEB-INF/views/"> </property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+</beans>
